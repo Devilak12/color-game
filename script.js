@@ -1,6 +1,7 @@
 var  color=['Red','Blue','Green','Yellow','Orange','White','Black','Pink','Purple'];
 
 let count=0;
+let sec=20;
 // var d=document.getElementById('h1');
 // d.addEventListener('click',newEvent);
 
@@ -15,6 +16,22 @@ st.addEventListener('click',start);
 function start(){
     lol=color[Math.floor(Math.random()*9)];
     document.getElementById('mid').innerHTML=lol;
+    if(sec==20)
+    {
+    timer();
+    }
+    function timer()
+    {
+        if(sec<=0)
+        {
+            alert("Game End Score Is="+count);
+        }
+        else{
+            --sec;
+            document.getElementById('timer').innerHTML=sec;
+        }
+        setTimeout(function(){timer();},1000);
+    } 
     
     a=document.getElementById('h1');
     b=document.getElementById('h2');

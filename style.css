@@ -5,11 +5,12 @@
 body {
     height: 100%;
     width: 100%;
+    over
 }
 #top {
     background-color: red;
     height: 100px;
-    width: 50%;
+    width: 50%;position: relative;
 }
 #top button {
     margin-left: 20%;
@@ -29,7 +30,7 @@ body {
     width: 15%;
     height: 15%;
     margin-bottom:13%;
-    margin-top: 30px;
+    margin-top: 2%;
     margin-right: 5%;
     margin-left: 10%;
     font-size:150%;
@@ -94,4 +95,14 @@ body {
 
 #h9 {
     background-color: purple;
+}
+#timer {
+    background-color: black;
+    color: white;
+    position: absolute;
+    padding:2% 3%;
+    font-size: 3em;
+    border-radius: 30px;
+    left: 70%;
+    bottom: 5%;
 }
